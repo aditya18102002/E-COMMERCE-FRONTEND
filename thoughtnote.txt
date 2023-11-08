@@ -1,0 +1,88 @@
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Hello!
+Welcome to the my first Capstone Project for this training. i Hope this a great time in the FrontEnd Web Development training.
+in This project i used HTML, CSS, Bootstrap, and JavaScript skills. let start by my small introduction
+my self aditya patidar intershala FSD student 15 sept batch.
+===============================================================================================================================================================
+
+pages index in this project:-
+1 header page inside common folder name as header.html
+2 footer page inside common folder anem as footer.html
+3 home page  name as home.html
+4 cart page, login page , contact page inside pages folder 
+5 products pages inside ppages folder
+6 all images are inside images folder .
+================================================================================================================================================================
+
+HEADER
+header is top navigation bar which is i made using navbar whare brand logo , search box in center at the of bar log in and cart icon below 
+that i use nav pills for navigation link like home , product for women and product for man and contact us all these link i add separate pages.
+i make header common in all pages and add this page using javascript to all html pages it is common in all pages .
+================================================================================================================================================================
+
+FOOTER
+footer is bottom part of web page where place some links and icons related to pages , in footer all product pages link and log in ,cart, homepage links are 
+placed i make this footer common in all html pages and i add this page using JavaScript it is also common in all pages.
+
+================================================================================================================================================================
+
+HOME PAGE
+first i add Bootstrap crousel for banner after that i add card slider after that i add header footer using javascript 
+then i make responsive for different devices. for lg devices 4 card slide at one time ,for medium screen two card slide at 
+one time, and last for sm size devices 1 one card slide and one more thing in medium or small size devices nav bar collapes in toggler
+at last i checked all links ,icon, card, header, footer, toggeler, crousel, and slider work properly .
+
+================================================================================================================================================================
+
+ALL PRODUCtS 
+In this page i add all card or all products category male female and kids .its html page inside PPAGES named folder.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WOMENS
+In this category i added  womens cloth like gown,lehnga, saree, and womens all product.its html pages inside PPAGES named folder.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MANS
+In this category i added mens cloth like ethics, wedding, suits,and mens all product.its html pages inside PPAGES named folder. 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+KIDS
+In this category i added  kids cloth  its html page inside PPAGES named folder.
+================================================================================================================================================================
+
+CART
+
+i made cart with help of Bootstrap the proccess are followed as 
+step 1:- i created one row and two coulume first is 8/12 and second is 4/12
+step 2:-  then i  give one more row inside first and give three coulume for image , product deatails and delete icon , and quantity 
+step 3:- then i make second colume for checkout 
+step 4:- the added javascript to quantity 
+step 5:- then i make it responsive in different devices .
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*EXTRA*
+1 = I GIVE MIN AND MAX quantity LIKE IF USER ENTER MORE THAN 5 THEN ALERT COMES AND IF USER ENTER LESS THAN 1 ALERT COME OUT 
+2 = I GIVE GRADIEN AS BACKGROUND
+3 = HOVER EFFECT ON ICON .
+
+==================================================================================================================================================================
+
+LOG IN PAGE 
+i make log in page simply useing form tag and some css and javascript
+i give validation for log in if user enter userid "admin@admin" or password "12345" then 
+sucessfully log in and otherwise alert  come out invalid user id or password and also responsive  .
+
+==================================================================================================================================================================
+
+CONTACT PAGE
+i make contact us page using Bootstrap , in this page i make one row and two colume first colume for image and second for inputs and button for styling i use  internal css . 
+===================================================================================================================================================================
+
+IMAGES FOLDER
+i this for i put all those images which required in this project or website , 
+*NOTE :- my seniors and teacher suggest me use online image to reduce file size but i do not have good internet connection so i can not  use .
+
+
+FROM HEART I LEARNED LOT OF THING IN THIS PROJECT AND FACE LOT OF SMALL SMALL PROBLEMS OR SOLVE THOSE PROBLEMS WITH HELP OF FSD FRIEND ,SENIORS , TEACHER AND MYSELF, 
+THE JOURNEY OF MAKING THESE PROJECT WAS SO BEAUTYFUL . 
+THANKS INTERNSHALA 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

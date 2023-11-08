@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .page-link {
+            line-height: 16px;
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #495057;
+        }
+
+        .page-item input {
+            line-height: 32px;
+            padding: 3px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+   
+          #delete:hover {
+            background: red;
+        }
+
+  body{
+    background-image: linear-gradient( rgba(128,0,0,0) , rgb(139, 133, 133)  );
+   }
+   
+        
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div id="main">  
+          <div class="container-fluid mt-2">
+        <!-- left side ROW  -->
+        <div class="row ">
+            <!-- HERE LEFT SIDE ROW INSIDE COLUMES  I DIVIDE COLUME IN 8 AND 4  -->
+            <div class="col-lg-8 col-md-12 mx-auto">
+                <div class="card">
+                    <h5 class="card-header" style="text-align: center;">CART ITEM</h5>
+                    <div class="card-body" style="margin: 0.5px;">
+                        <!-- THIS IS ROW INSIDE 8 COLUME  -->
+                        <div class="row"> 
+                            <!-- image of product COLUMES   -->
+                            <div class="col-lg-6 col-md-4 col-sm-12  text-center ">
+                                <img src="../images/gown4.jpg" style="aspect-ratio: 1/1; height: 300px;">
+                            </div>
+                            <!-- detail of product COLUMES  -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6 mx-auto  justify-item-start" style="text-align: center;">
+                                <p>GOWN</p>
+                                <p>1500/-</p>
+                                <button id="delete"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                            <!-- button for increment or decrement of quantity COLUMES -->
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-4  justify-item-end text-center ">
+                                <ul class="pagination set_quantity">
+                                    <li class="page-item">
+                                        <button type="button" class="page-link" id="delete" onclick="decreaseNumber()">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </button>
+                                    </li>
+                                    <li class="page-item">
+                                        <input type="number" class="page-link" readonly id="textbox1" value="0">
+                                    </li>
+                                    <li class="page-item">
+                                        <button type="button" class="page-link" id="delete" onclick="increaseNumber()">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- rigth side COLUME  -->
+            <div class="col-lg-4 col-md-12 mx-auto">
+                <div class="card">
+                    <h5 class="card-header" style="text-align: center;">SUMMARY</h5>
+                    <div class="card-body" style="margin: 0.5px;">
+                        <div class="row">
+                            <div class="col text-start">
+                                <p>GOWN</p>
+                                <p>SHIPING</p>
+                            </div>
+                            <div class="col text-end">
+                                <p>1500 /-</p>
+                                <p>20 /-</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col text-start">
+                                <p>TOTAL</p>
+                            </div>
+                            <div class="col text-end">
+                                <p>1520 /-</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-outline-primary">Check out</button>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><br> <br>
+<!-- HERE ARE FOOTER OF THIS PAGE  -->
+
+    <div id="footer"></div>
+<!-- HERE I GIVE JQUERY LINK  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- HERE ARE I GIVE BOOTSTRAP BUNDLE LINK  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<!-- HERE ARE I GIVE JAVASCRIPT FOR CART PAGE  -->
+    <script>
+function decreaseNumber() 
+{
+    var itemval = document.getElementById("textbox1");
+    if(itemval.value < 1){
+        itemval.value = 1 ;
+alert("negetive quantity not allowed");
+    }else{
+        itemval.value = parseInt( itemval.value ) - 1 ;
+        
+    }
+}
+function increaseNumber() {
+var itemval = document.getElementById("textbox1");
+if(itemval.value > 5){
+        itemval.value = 5 ;
+alert("max 5 quantity  allowed");
+    }else{
+        itemval.value = parseInt( itemval.value ) + 1 ;
+        
+    }
+}
+
+
+$(function () {
+      $("#header").load("../../common/header.html");
+      $("#footer").load("../../common/footer.html");
+    })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saree</title>
+    <!-- HERE I ADDED bootstrap CSS LINK   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- HERE I ADDED CSS stylesheet  -->
+    <style>
+        #pht {
+            aspect-ratio: 1/1;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom left, #ffafbd, #ffc3a0, #ec6ead, #ee0979, #dc281e);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- here is header added by using javascript  -->
+    <div id="header">
+    </div>
+    <br>
+    <div id="main">
+        <div class="container-fluid">
+            <h3>SAREES</h3>
+            <!-- HERE IS A ROW FOR CARD  -->
+            <div class="row ">
+                <!-- here is colomes for above row ,for small size only one card ,for midum size only two card and for large size 4 card FOR EACH CARD   -->
+
+                <div class="col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="card">
+                        <img src="../../images/lehnga5.jpg" id="pht" class="card-img-top" alt="photo">
+                        <div class="card-body">
+                            <h5 class="card-title">SAREE 1</h5>
+
+                            <a href="#" class="btn btn-primary" type="butten">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="card">
+                        <img src="../../images/lehnga6.jpg" id="pht" class="card-img-top" alt="photo">
+                        <div class="card-body">
+                            <h5 class="card-title">SAREE 2</h5>
+                            <a href="#" class="btn btn-primary" type="butten">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="card">
+                        <img src="../../images/saree1.jpg" id="pht" class="card-img-top" alt="photo">
+                        <div class="card-body">
+                            <h5 class="card-title">SAREE 3</h5>
+                            <a href="#" class="btn btn-primary" type="butten">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="card">
+                        <img src="../../images/saree2.jpg" id="pht" class="card-img-top" alt="photo">
+                        <div class="card-body">
+                            <h5 class="card-title">SAREE 4</h5>
+                            <a href="#" class="btn btn-primary" type="butten">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- here is FOOTER added by using javascript  -->
+    <div id="footer">
+    </div>
+
+    <!-- HERE I ADDED JQUERY LINK  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- HERE I ADDED bootstrap BUNDLE LINK  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- HERE I ADDED javascript  -->
+    <script>
+        $(function () {
+            $("#header").load("../../common/header.html");
+            $("#footer").load("../../common/footer.html");
+        })
+    </script>
+
+
+</body>
+
+</html>

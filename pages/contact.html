@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <!-- bootstrap LINK  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- INTERNAL CSS  -->
+    <style>
+        h3 {
+            text-align: center;
+        }
+
+        #pht {
+            height: 350px;
+            width: 890px;
+            padding-left: 20px;
+            text-align: center;
+            padding: 10px;
+            /* margin-left: 10px; */
+
+        }
+
+        body {
+            background-image: linear-gradient(rgba(128, 0, 0, 0), rgb(139, 133, 133));
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HERE IS HEADER  -->
+    <div id="header"></div>
+
+    <div id="main">
+        <div class="get">
+            <h3>Contact Us</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- HERE COLUMES FOR LARGE MIDUME AND SMALL SIZE DEVICES  -->
+                    <div class="col-lg-6 col-12 col-sm-12 mx-auto text-center">
+                        <img src="../images/1698434361417.png" class="img-fluid" id="pht">
+                    </div>
+
+                    <div class=" col-lg-6 col-12 col-sm-12 mx-auto mt-2" id="cous">
+                        <!-- THIS IS INPUT WITH TYPE TEXT  -->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="inputbox" placeholder="YOUR NAME">
+                        </div>
+
+                        <!-- E MAIL INPUT WITH TYPE EMAIL  -->
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="inputbox" placeholder="YOUR EMAIL ID">
+                        </div>
+                        <!-- MEASSAGE INPUT WITH TYPE TEXTAREA  -->
+
+                        <div class="mb-3">
+                            <input type="textarea" class="form-control" id="inputbox" placeholder="TYPE YOUR MESSAGE">
+                        </div>
+                        <!-- HERE IS BUTTON TYPE SUBMIT  -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <!-- HERE IS FOOTER OF PAGE  -->
+    <div id="footer"></div>
+
+    <!-- here i added jquery link  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- here i added BOOTSTRAP link  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- here are i added javascript  -->
+    <script>
+        $(function () {
+            $("#header").load("../../common/header.html");
+            $("#footer").load("../../common/footer.html");
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login </title>
+    <!-- here are i added  bootsrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- here is ccs style sheet added  -->
+    <style>
+        html {
+            height: 100%;
+        }
+
+        .box {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+             /* box-shadow: 0px 0px 5px 1px rgb(2, 2, 2); */
+           
+            /* background-image: linear-gradient(rgb(255, 253, 253),rgb(0, 0, 0)); */
+        }
+
+        #main-holder {
+            width: 50%;
+            height: 100%;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            background-color:black;
+            border-radius: 7px;
+            box-shadow: 0px 4px 5px 10px rgb(10, 10, 10);
+            
+
+        }
+
+        #login-error-msg-holder {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        #login-error-msg {
+            width: 23%;
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #8a0000;
+            border: 1px solid #8a0000;
+            background-color: #e58f8f;
+            opacity: 0;
+
+        }
+
+        #error-msg-second-line {
+            display: block;
+        }
+
+        #login-form {
+            align-self: flex-start;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        .login-form-field::placeholder {
+            color: #3a3a3a;
+
+        }
+
+        .login-form-field {
+            border: none;
+            border-bottom: 1px solid #3a3a3a;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            outline: none;
+            padding: 0px 0px 5px 5px;
+        }
+
+        #login-form-submit {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            background-color: #3a3a3a;
+            cursor: pointer;
+            outline: none;
+        }
+
+        /* body {
+            background-color: rgb(0, 0, 0);
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- html file for log in i used form tag  -->
+    <div id="header"></div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <div class="box">
+        <div id="main">
+            <div id="main-holder text-center">
+                <h1 id="login-header">Login</h1>
+                <!-- for alert  -->
+                <div id="login-error-msg-holder">
+                    <p id="login-error-msg">invalid username <span id="error-msg-second-line">and/or password</span>
+                    </p>
+
+                </div>
+                <!-- form tag for get input from user  -->
+                <form id="login-form">
+                    <input type="email" name="username" id="username-field" class="login-form-field"
+                        placeholder="username">
+                    <input type="password" name="password" id="password-field" class="login-form-field"
+                        placeholder="password">
+                    <input type="submit" value="login" id="login-form-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+   
+
+
+    <!-- here i added bootsrap form 
+    <h3 style="text-align: center;">Log IN</h3>
+    <div class="container-fluid">
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-6 col-md-12 col-lg-12 col-form-label">Email</label>
+            <div  class="col-sm-6 col-md-12 col-lg-12">
+                <input type="email" class="form-control" id="staticEmail" value="admin@admin.com">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-6 col-md-12 col-lg-12 col-form-label">Password</label>
+            <div  class="col-sm-6 col-md-12 col-lg-12">
+                <input type="password" class="form-control" id="inputPassword" value="12345">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <div class="d-grid gap-50 col-sm-6 col-md-12 col-lg-12 ">
+                <button type="submit" class="btn btn-primary">log in</button>
+            </div>
+        </div>
+
+    </div> -->
+    <div id="footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- javascript  -->
+    <script>
+        const loginForm = document.getElementById("login-form");
+        const loginButton = document.getElementById("login-form-submit");
+        const loginErrorMsg = document.getElementById("login-error-msg");
+        loginButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            const username = loginForm.username.value;
+            const password = loginForm.password.value;
+            if (username === "admin@admin" && password === "12345") {
+                alert("log in success");
+                location.reload();
+            } else {
+                loginErrorMsg.style.opacity = 1;
+            }
+
+
+        })
+    </script>
+    <!-- here are i added javascript  -->
+    <script>
+        $(function () {
+            $("#header").load("../../common/header.html");
+            $("#footer").load("../../common/footer.html");
+        })
+    </script>
+</body>
+
+</html>
